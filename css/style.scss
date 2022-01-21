@@ -1,0 +1,587 @@
+$primary-color: black;
+
+// include mixin property
+
+@mixin primary-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin primary-anchor {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+
+@mixin primary-border {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+@mixin primary-sizing {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+}
+
+// extend property
+
+.common-container {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.common-h3 {
+    width: 100%;
+    text-align: center;
+    border: 2px solid rgb(255, 142, 142);
+    background-color: rgb(176, 245, 108);
+    padding: 15px;
+}
+
+.common-table {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.common-th {
+    padding: 0.2rem;
+    background-color: rgb(114, 214, 181);
+}
+.common-td {
+    background-color: rgb(201, 248, 201);
+}
+
+.common-fes {
+    background-color: rgb(238, 209, 172);
+}
+
+.common-nex {
+    background-color: #dfdfdf;
+}
+
+// basic properties
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(230, 230, 230, 0.815);
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+html {
+    font-size: 25px;
+}
+
+// navigation styling
+
+nav {
+    width: 100%;
+    padding-top: 0.5rem;
+    @include primary-flex();
+
+    a {
+        @include primary-anchor();
+        margin-left: 0.5rem;
+        padding: 0.4rem;
+        border-radius: 2rem;
+        background-color: rgb(38, 182, 182);
+    }
+
+    span {
+        color: $primary-color;
+        font-size: 1.5rem;
+        padding-right: 1rem;
+        cursor: pointer;
+    }
+}
+
+.nav-menu {
+    display: none;
+
+    ul {
+        @include primary-flex();
+        list-style: none;
+        padding: 0 1rem;
+    }
+
+    li {
+        a {
+            @include primary-anchor();
+            padding: 0.3rem;
+        }
+
+        a:hover {
+            border-radius: 2rem;
+            background-color: rgb(150, 150, 150);
+            color: #fff;
+        }
+    }
+}
+
+// navigation ends
+
+.container {
+    width: 98%;
+    margin: 1rem auto;
+    text-align: center;
+    @include primary-flex();
+
+    table {
+        @include primary-border();
+        @include primary-sizing();
+        margin-bottom: 0.7rem;
+
+        th {
+            @include primary-border();
+            padding: 0.2rem;
+            background-color: rgb(114, 214, 181);
+        }
+
+        td {
+            @include primary-border();
+            background-color: rgb(201, 248, 201);
+        }
+
+        .month {
+            width: 100%;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        .custom-c {
+            background-color: khaki;
+        }
+    }
+
+    .fes {
+        background-color: rgb(238, 209, 172);
+        cursor: pointer;
+    }
+
+    .nex {
+        background-color: #dfdfdf;
+    }
+}
+
+@import "common";
+
+.jan_dl {
+    margin-top: 4rem;
+    margin-right: 2rem;
+
+    li {
+        font-size: 1rem;
+    }
+}
+
+.feb_dl {
+    margin-top: 3rem;
+    margin-right: 1rem;
+
+    li {
+        font-size: 0.9rem;
+    }
+}
+
+.march_dl {
+    margin-top: 3.5rem;
+    margin-right: 2rem;
+
+    li {
+        font-size: 1.2rem;
+    }
+}
+
+.april_dl {
+    margin-top: 3rem;
+    margin-right: 2rem;
+
+    li {
+        font-size: 0.9rem;
+    }
+}
+
+.may_dl {
+    margin-top: 4rem;
+    margin-right: 2rem;
+
+    li {
+        font-size: 1rem;
+    }
+}
+
+.june_dl {
+    margin-top: 6rem;
+    margin-right: 5rem;
+
+    li {
+        font-size: 1.2rem;
+    }
+}
+
+.july_dl {
+    margin-top: 4.5rem;
+    margin-right: 2rem;
+
+    li {
+        font-size: 1.2rem;
+    }
+}
+
+.august_dl {
+    margin-top: 3rem;
+    margin-right: 4rem;
+
+    li {
+        font-size: 1.1rem;
+    }
+}
+
+.sept_dl {
+    margin-top: 4.5rem;
+    margin-right: 2rem;
+
+    li {
+        font-size: 1rem;
+    }
+}
+
+.oct_dl {
+    margin-top: 3rem;
+    margin-right: 2rem;
+
+    li {
+        font-size: 1rem;
+    }
+}
+
+.nov_dl {
+    margin-top: 5rem;
+
+    li {
+        font-size: 1rem;
+    }
+}
+
+.dec_dl {
+    margin-top: 5rem;
+    margin-right: 2rem;
+
+    li {
+        font-size: 1rem;
+    }
+}
+
+// holidays
+
+.container-hol{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    @include primary-flex();
+
+    h3 {
+        width: 100%;
+        color: $primary-color;
+        text-align: center;
+    }
+
+    h5 {
+        text-align: center;
+    }
+}
+// media query starts
+
+@media only screen and (max-width: 1024px) {
+
+    .nav-menu {
+
+        li {
+
+            a {
+                padding: 0 1.5rem;
+            }
+        }
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .common-container {
+
+        table {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        dl {
+            width: 90%;
+            margin: 1rem auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-menu {
+
+        li {
+
+            a {
+                padding: 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .container {
+        width: 60%;
+
+        table {
+            margin: 1rem 0;
+        }
+    }
+
+    .common-container {
+
+        table {
+
+            th {
+                font-size: 0.8rem;
+            }
+
+            td {
+                font-size: 0.8rem;
+            }
+        }
+
+        dl {
+            width: 90%;
+            margin: 1rem auto;
+
+            li {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .container-hol {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    nav {
+
+        a {
+            font-size: 0.6rem;
+        }
+
+        span {
+            font-size: 1rem;
+            margin-top: 0.3rem;
+        }
+    }
+
+    .nav-menu {
+
+        li {
+
+            a {
+                font-size: 0.5rem;
+            }
+        }
+    }
+
+    .container {
+        width: 95%;
+
+        table {
+            margin: 1rem 0;
+            font-size: 0.45rem;
+        }
+    }
+
+    .common-container {
+
+        h3 {
+            font-size: 0.8rem;
+        }
+
+        table {
+
+            th {
+                font-size: 0.45rem;
+            }
+
+            td {
+                font-size: 0.6rem;
+            }
+        }
+
+        .nex {
+
+            a {
+                font-size: 0.6rem;
+            }
+        }
+
+        dl {
+
+            li {
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+    .container-hol {
+
+        h3 {
+            font-size: 1rem;
+        }
+        h5 {
+            font-size: 0.8rem;
+        }
+
+        p {
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .nav-menu {
+
+        li {
+
+            a {
+                font-size: 0.5rem;
+            }
+        }
+    }
+
+    .container {
+
+        table {
+            font-size: 0.39rem;
+
+            .month {
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+    .common-container {
+
+        h3 {
+            font-size: 0.6rem;
+        }
+
+        table {
+
+            th {
+                font-size: 0.4rem;
+            }
+
+            td {
+                font-size: 0.5rem;
+            }
+        }
+
+        .nex {
+
+            a {
+                font-size: 0.5rem;
+            }
+        }
+
+        dl {
+
+            li {
+                font-size: 0.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    nav {
+        a {
+            font-size: 0.45rem;
+        }
+
+        span {
+            font-size: 0.9rem;
+        }
+    }
+
+    .nav-menu {
+
+        li {
+
+            a {
+                font-size: 0.5rem;
+            }
+        }
+    }
+
+    .container {
+
+        table {
+            font-size: 0.32rem;
+        }
+    }
+
+    .common-container {
+
+        h3 {
+            font-size: 0.5rem;
+            padding: 0.3rem;
+        }
+
+        table {
+
+            th {
+                font-size: 0.3rem;
+            }
+
+            td {
+                font-size: 0.4rem;
+            }
+        }
+
+        .nex {
+
+            a {
+                font-size: 0.4rem;
+            }
+
+        }
+
+        dl {
+
+            li {
+                font-size: 0.4rem;
+            }
+        }
+    }
+
+    .container-hol {
+        h3 {
+            font-size: 0.8rem;
+        }
+        h5 {
+            font-size: 0.7rem;
+        }
+
+        p {
+            font-size: 0.5rem;
+        }
+    }
+}
