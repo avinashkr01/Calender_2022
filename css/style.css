@@ -164,6 +164,35 @@ nav span {
   background-color: #dfdfdf;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 1px solid black;
+}
+
+.footer .footer-logo {
+  margin: 0rem 1rem;
+  padding-top: 0.6rem;
+}
+
+.footer .footer-logo a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 0.8rem;
+}
+
+.footer .footer-text {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
 .container-common {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,6 +438,19 @@ nav span {
     margin: 1rem 0;
     font-size: 0.45rem;
   }
+  .footer {
+    text-align: center;
+  }
+  .footer .footer-logo {
+    width: 100%;
+  }
+  .footer .footer-logo a {
+    font-size: 0.8rem;
+  }
+  .footer .footer-text {
+    width: 100%;
+    font-size: 0.7rem;
+  }
   .common-container h3, .container-common h3 {
     font-size: 0.8rem;
   }
@@ -448,6 +490,12 @@ nav span {
   .container table .month {
     font-size: 0.6rem;
   }
+  .footer .footer-logo a {
+    font-size: 0.7rem;
+  }
+  .footer .footer-text {
+    font-size: 0.6rem;
+  }
   .common-container h3, .container-common h3 {
     font-size: 0.6rem;
   }
@@ -480,6 +528,12 @@ nav span {
   }
   .container table {
     font-size: 0.32rem;
+  }
+  .footer .footer-logo a {
+    font-size: 0.6rem;
+  }
+  .footer .footer-text {
+    font-size: 0.5rem;
   }
   .common-container h3, .container-common h3 {
     font-size: 0.5rem;
