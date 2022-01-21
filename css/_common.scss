@@ -30,6 +30,10 @@
 
         .nex {
             @extend .common-nex;
+
+            a{
+                font-size: 1rem;
+            }
         }
 
     }

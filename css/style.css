@@ -13,16 +13,18 @@
 
 .common-table, .container-common table {
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .common-th, .container-common table th {
   padding: 0.2rem;
   background-color: #72d6b5;
+  height: 1.5rem;
 }
 
 .common-td, .container-common table td {
   background-color: #c9f8c9;
+  height: 2rem;
 }
 
 .common-fes, .container-common table .fes {
@@ -39,7 +41,7 @@ body {
   background-color: rgba(230, 230, 230, 0.815);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: cursive;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 html {
@@ -123,7 +125,7 @@ nav span {
 .container table {
   border: 1px solid black;
   border-collapse: collapse;
-  font-size: 0.5rem;
+  font-size: 0.53rem;
   padding: 0.3rem;
   margin-bottom: 0.7rem;
 }
@@ -133,12 +135,14 @@ nav span {
   border-collapse: collapse;
   padding: 0.2rem;
   background-color: #72d6b5;
+  height: 0.8rem;
 }
 
 .container table td {
   border: 1px solid black;
   border-collapse: collapse;
   background-color: #c9f8c9;
+  height: 1rem;
 }
 
 .container table .month {
@@ -192,22 +196,28 @@ nav span {
   font-size: 0.8rem;
 }
 
+.container-common table .nex a {
+  font-size: 1rem;
+}
+
 .jan_dl {
-  margin-top: 4rem;
+  margin-top: 3.8rem;
   margin-right: 2rem;
 }
 
 .jan_dl li {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 .feb_dl {
   margin-top: 3rem;
-  margin-right: 1rem;
+  margin-right: 0.4rem;
 }
 
 .feb_dl li {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
 }
 
 .march_dl {
@@ -216,25 +226,28 @@ nav span {
 }
 
 .march_dl li {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 .april_dl {
   margin-top: 3rem;
-  margin-right: 2rem;
+  margin-right: 0.8rem;
 }
 
 .april_dl li {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
 }
 
 .may_dl {
-  margin-top: 4rem;
-  margin-right: 2rem;
+  margin-top: 4.5rem;
+  margin-right: 1rem;
 }
 
 .may_dl li {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .june_dl {
@@ -247,39 +260,43 @@ nav span {
 }
 
 .july_dl {
-  margin-top: 4.5rem;
+  margin-top: 5.5rem;
   margin-right: 2rem;
 }
 
 .july_dl li {
   font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .august_dl {
   margin-top: 3rem;
-  margin-right: 4rem;
+  margin-right: 3rem;
 }
 
 .august_dl li {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .sept_dl {
-  margin-top: 4.5rem;
+  margin-top: 5rem;
   margin-right: 2rem;
 }
 
 .sept_dl li {
   font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .oct_dl {
-  margin-top: 3rem;
+  margin-top: 3.2rem;
   margin-right: 2rem;
 }
 
 .oct_dl li {
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .nov_dl {
@@ -288,6 +305,7 @@ nav span {
 
 .nov_dl li {
   font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .dec_dl {
@@ -297,6 +315,7 @@ nav span {
 
 .dec_dl li {
   font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .container-hol {
@@ -357,6 +376,9 @@ nav span {
   .common-container table td, .container-common table td {
     font-size: 0.8rem;
   }
+  .common-container table .nex a, .container-common table .nex a {
+    font-size: 0.8rem;
+  }
   .common-container dl, .container-common dl {
     width: 90%;
     margin: 1rem auto;
@@ -396,6 +418,9 @@ nav span {
   .common-container table td, .container-common table td {
     font-size: 0.6rem;
   }
+  .common-container table .nex a, .container-common table .nex a {
+    font-size: 0.6rem;
+  }
   .common-container .nex a, .container-common .nex a {
     font-size: 0.6rem;
   }
@@ -432,6 +457,9 @@ nav span {
   .common-container table td, .container-common table td {
     font-size: 0.5rem;
   }
+  .common-container table .nex a, .container-common table .nex a {
+    font-size: 0.5rem;
+  }
   .common-container .nex a, .container-common .nex a {
     font-size: 0.5rem;
   }
@@ -463,7 +491,7 @@ nav span {
   .common-container table td, .container-common table td {
     font-size: 0.4rem;
   }
-  .common-container .nex a, .container-common .nex a {
+  .common-container table .nex a, .container-common table .nex a {
     font-size: 0.4rem;
   }
   .common-container dl li, .container-common dl li {

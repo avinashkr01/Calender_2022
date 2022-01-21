@@ -20,7 +20,7 @@ $primary-color: black;
 }
 
 @mixin primary-sizing {
-    font-size: 0.5rem;
+    font-size: 0.53rem;
     padding: 0.3rem;
 }
 
@@ -41,15 +41,17 @@ $primary-color: black;
 
 .common-table {
     text-align: center;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 .common-th {
     padding: 0.2rem;
     background-color: rgb(114, 214, 181);
+    height: 1.5rem;
 }
 .common-td {
     background-color: rgb(201, 248, 201);
+    height: 2rem;
 }
 
 .common-fes {
@@ -67,7 +69,7 @@ body {
     margin: 0;
     background-color: rgba(230, 230, 230, 0.815);
     box-sizing: border-box;
-    font-family: 'Dongle', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 html {
@@ -137,11 +139,13 @@ nav {
             @include primary-border();
             padding: 0.2rem;
             background-color: rgb(114, 214, 181);
+            height: 0.8rem;
         }
 
         td {
             @include primary-border();
             background-color: rgb(201, 248, 201);
+            height: 1rem;
         }
 
         .month {
@@ -168,20 +172,22 @@ nav {
 @import "common";
 
 .jan_dl {
-    margin-top: 4rem;
+    margin-top: 3.8rem;
     margin-right: 2rem;
 
     li {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
     }
 }
 
 .feb_dl {
     margin-top: 3rem;
-    margin-right: 1rem;
+    margin-right: 0.4rem;
 
     li {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
     }
 }
 
@@ -190,25 +196,28 @@ nav {
     margin-right: 2rem;
 
     li {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        margin-bottom: 1.4rem;
     }
 }
 
 .april_dl {
     margin-top: 3rem;
-    margin-right: 2rem;
+    margin-right: 0.8rem;
 
     li {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
     }
 }
 
 .may_dl {
-    margin-top: 4rem;
-    margin-right: 2rem;
+    margin-top: 4.5rem;
+    margin-right: 1rem;
 
     li {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -222,38 +231,42 @@ nav {
 }
 
 .july_dl {
-    margin-top: 4.5rem;
+    margin-top: 5.5rem;
     margin-right: 2rem;
 
     li {
         font-size: 1.2rem;
+        margin-bottom: 1.5rem;
     }
 }
 
 .august_dl {
     margin-top: 3rem;
-    margin-right: 4rem;
+    margin-right: 3rem;
 
     li {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
     }
 }
 
 .sept_dl {
-    margin-top: 4.5rem;
+    margin-top: 5rem;
     margin-right: 2rem;
 
     li {
         font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
 }
 
 .oct_dl {
-    margin-top: 3rem;
+    margin-top: 3.2rem;
     margin-right: 2rem;
 
     li {
         font-size: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -262,6 +275,7 @@ nav {
 
     li {
         font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -271,12 +285,13 @@ nav {
 
     li {
         font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
 }
 
 // holidays
 
-.container-hol{
+.container-hol {
     width: 70%;
     margin: 0 auto;
     text-align: center;
@@ -295,11 +310,8 @@ nav {
 // media query starts
 
 @media only screen and (max-width: 1024px) {
-
     .nav-menu {
-
         li {
-
             a {
                 padding: 0 1.5rem;
             }
@@ -311,7 +323,6 @@ nav {
     }
 
     .common-container {
-
         table {
             width: 90%;
             margin: 0 auto;
@@ -325,11 +336,8 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-
     .nav-menu {
-
         li {
-
             a {
                 padding: 0.5rem;
                 font-size: 0.8rem;
@@ -346,15 +354,19 @@ nav {
     }
 
     .common-container {
-
         table {
-
             th {
                 font-size: 0.8rem;
             }
 
             td {
                 font-size: 0.8rem;
+            }
+
+            .nex {
+                a {
+                    font-size: 0.8rem;
+                }
             }
         }
 
@@ -374,9 +386,7 @@ nav {
 }
 
 @media only screen and (max-width: 425px) {
-
     nav {
-
         a {
             font-size: 0.6rem;
         }
@@ -388,9 +398,7 @@ nav {
     }
 
     .nav-menu {
-
         li {
-
             a {
                 font-size: 0.5rem;
             }
@@ -407,13 +415,11 @@ nav {
     }
 
     .common-container {
-
         h3 {
             font-size: 0.8rem;
         }
 
         table {
-
             th {
                 font-size: 0.45rem;
             }
@@ -421,17 +427,21 @@ nav {
             td {
                 font-size: 0.6rem;
             }
+
+            .nex {
+                a {
+                    font-size: 0.6rem;
+                }
+            }
         }
 
         .nex {
-
             a {
                 font-size: 0.6rem;
             }
         }
 
         dl {
-
             li {
                 font-size: 0.6rem;
             }
@@ -439,7 +449,6 @@ nav {
     }
 
     .container-hol {
-
         h3 {
             font-size: 1rem;
         }
@@ -454,11 +463,8 @@ nav {
 }
 
 @media only screen and (max-width: 375px) {
-
     .nav-menu {
-
         li {
-
             a {
                 font-size: 0.5rem;
             }
@@ -466,7 +472,6 @@ nav {
     }
 
     .container {
-
         table {
             font-size: 0.39rem;
 
@@ -477,13 +482,11 @@ nav {
     }
 
     .common-container {
-
         h3 {
             font-size: 0.6rem;
         }
 
         table {
-
             th {
                 font-size: 0.4rem;
             }
@@ -491,17 +494,21 @@ nav {
             td {
                 font-size: 0.5rem;
             }
+
+            .nex {
+                a {
+                    font-size: 0.5rem;
+                }
+            }
         }
 
         .nex {
-
             a {
                 font-size: 0.5rem;
             }
         }
 
         dl {
-
             li {
                 font-size: 0.5rem;
             }
@@ -510,7 +517,6 @@ nav {
 }
 
 @media only screen and (max-width: 320px) {
-
     nav {
         a {
             font-size: 0.45rem;
@@ -522,9 +528,7 @@ nav {
     }
 
     .nav-menu {
-
         li {
-
             a {
                 font-size: 0.5rem;
             }
@@ -532,21 +536,18 @@ nav {
     }
 
     .container {
-
         table {
             font-size: 0.32rem;
         }
     }
 
     .common-container {
-
         h3 {
             font-size: 0.5rem;
             padding: 0.3rem;
         }
 
         table {
-
             th {
                 font-size: 0.3rem;
             }
@@ -554,18 +555,16 @@ nav {
             td {
                 font-size: 0.4rem;
             }
-        }
 
-        .nex {
+            .nex {
 
-            a {
-                font-size: 0.4rem;
+                a {
+                    font-size: 0.4rem;
+                }
             }
-
         }
 
         dl {
-
             li {
                 font-size: 0.4rem;
             }
